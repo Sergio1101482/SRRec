@@ -18,13 +18,99 @@
 %Or just google stuff
  
 \title{Software Requirement specification }
-\author{Author}
+\author{Authors\\Levi Goldfein 1257360}
 \maketitle
  
 \begin{Project}{: Shopping Route Recommender}
 
 \end{Project}
+\section{sect 1} 
+I think as people add their parts in the correct order the section numbers will update themselves???....
+\section{System Features}
+\subsection{Minimum Shopping Expenses 1}
+\subsubsection{Description and Priority}
+Priority: Very High\\
+ The user inputs their shopping list of, say n, items the program then outputs a list of n or less (if 2 or more items are available at the same shop) shops that supply the items on the shopping list for the cheapest amount possible. The output will also show which shopping list items can be purchased at which shop. This feature gives the user no indication the order in which listed shops should be visited.  
+ \subsubsection{Stimulus and Response Sequence}     -User types in shopping list\\
+-User presses button labelled "TBD?"\\
+-System outputs table of shops and products\\
+ \subsubsection{Functional Requirements}
+ The requirements for this feature are a database  containing shops (for example: PNP,Checkers,game, DionWired, Mr Price, Woolworth) that stock items an average shopper may need, for example: clothing, groceries, appliances etc, and specific items stocked in said shops with their respective prices. The product should also respond to invalid inputs and errors with an error message. Invalid inputs include items entered that are not found in the database.
  
+ \subsection{Minimum Shopping Expenses 2}
+\subsubsection{Description and Priority}
+ Priority: High\\
+ This feature is basically an extension of Minimum Shopping Expenses 1 (feature 2.1), but incorporates the vital goal of the product: a route to take. The user inputs their shopping list of, n, items and their current location. The program then outputs an \textbf{ordered list} of n or less shops to visit and which items are available to purchase at each shop. The shops listed are to provide the user the cheapest possible shopping expenses and are ordered to provide the shortest route while minimum price is prioritised. The route length is irrelevant. 
+\\\\
+\textbf{Map:} A further extension of this feature will be to show the shops on a map with directions of the route.
+ \subsubsection{Stimulus and Response Sequence}
+-User types in shopping list\\
+-User presses button labelled "?TBD?"\\
+-System outputs table of shops and products\\
+-System outputs map with directions\\
+ \subsubsection{Functional Requirements}
+ The basic requirements are the same as Minimum Shopping Expenses 1 with the added information of each shops GPS co-ordinates. As well as the added software capabilities of resolving precise locations and mapping.
+ 
+ \subsection{Minimum Travel Time}
+\subsubsection{Description and Priority}
+ Priority: High\\
+ This feature uses the same input information as Minimum Shopping Expenses 2 (feature 2.2) (shopping list and current location) and outputs an ordered list of shops preferencing a short route length and travel time over actual shopping expenses.  
+\\\\
+\textbf{Map:} A further extension of this feature will be to show the shops on a map with directions of the route.
+ \subsubsection{Stimulus and Response Sequence}
+-User types in shopping list\\
+-User presses button labelled "?TBD?"\\
+-System outputs table of shops and products\\
+-System outputs map with directions\\ \subsubsection{Functional Requirements}
+Will require software to calculate shortest route and perhaps traffic awareness and avoidance  protocols.
+ 
+ \subsection{Minimum Total Expenses}
+\subsubsection{Description and Priority}
+ Priority: High\\
+ This feature requires the same input as features 2.2 and 2.3 and outputs an ordered list of shops that takes into account both shopping expenses and travelling time and expenses and minimises both. 
+ \\\\
+\textbf{Map:} A further extension of this feature will be to show the shops on a map with directions of the route.
+ \subsubsection{Stimulus and Response Sequence}
+ -User types in shopping list\\
+-User presses button labelled "?TBD?"\\
+-System outputs table of shops and products\\
+-System outputs map with directions\\
+ \subsubsection{Functional Requirements}
+ This feature requires up-to-date information on travelling expenses (from the AAA or the likes).
+ As well as the functional requirements listed in Features 2.2 and 2.3.
+ %new lines to put Section 2.5 to the next page
+ \\
+ \\
+ \\
+ \\
+ \subsection{Account/Login}
+\subsubsection{Description and Priority}
+ Priority: Medium\\
+ This feature will enable users to sign-up and create an account which enables them to store pertinent information, such as:\begin{itemize}
+  \item favourite shopping list
+  \item favourite route or route type eg: Minimum Shopping Expenses
+  \item home/work/starting location
+\end{itemize}
+for future use. \\
+The inputs for this feature would be a valid user-name and password and some form of verification eg: email address or cellphone number. 
+      
+ \subsubsection{Stimulus and Response Sequence}
+-User enters Sign-Up page to create an account \\
+-System creates the necessary databases for the user\\
+-User enters preferred information eg: favourite shopping list\\
+-System saves information in correct tables in database
+ \subsubsection{Functional Requirements}
+The requirements for this feature would extend to added databases to store user-name password keys,  saved shopping lists and routes and saved locations. We would also have to provide security to ensure none of the users sensitive data is accessible. 
 
-
+ \subsection{Item Success Tracking}
+\subsubsection{Description and Priority}
+ Priority:Low\\
+ This feature would be an add-on to all the above route features and would remind you which items to purchase at the current shop and then track the success of your stop at the specific shop. This would enable you to recalculate your current route based on whether you found the item at this shop or not. As well as notify other users of the availability of an item at a specific shop.  
+ \subsubsection{Stimulus and Response Sequence}
+-When the user arrives at a shop the system outputs which items off  the users shopping list are intended to purchased at this shop.\\
+-User  inputs whether or not they were successful.
+ \subsubsection{Functional Requirements}
+ This feature would require constant access to the users GPS and perhaps some added input from the user. 
+ 
+ 
 \end{document}
