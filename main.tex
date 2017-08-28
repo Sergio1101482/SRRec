@@ -18,7 +18,7 @@
 %Or just google stuff
  
 \title{Software Requirement specification }
-\author{Authors\\Levi Goldfein 1257360\\Sabeehah Ismail 797621\\ Sergio Oliveira 1101482}
+\author{Authors\\Levi Goldfein 1257360\\Sabeehah Ismail 797621\\ Sergio Oliveira 1101482 \\Storm Menges 1102107}
 \maketitle
  
 \begin{Project}{: Shopping Route Recommender}
@@ -33,6 +33,36 @@ The benefits of the SRRec are the following:\\
 -If the user wants a route to purchase their items at the cheapest prices, the SRRec will provide a route based on the shortest path for the minimal total expenses.\\
 -If the user wants a route that will allow them to purchase their items in the least amount of time, the SRRec will provide a route based on the shortest travel time.
 
+\subsection{Purpose}
+The purpose of the project is to create quality software that allows 
+the user to enter items they require and the software will generate the shortest
+path to go and buy the items they require. Our main goal is to produce quality software
+that is relevant and provides an accurate solution to all users at any given time
+
+\subsection{Product Overview}
+Our product is a software product in which we will allow the user to input 
+items that they require and we will generate a route which will take the shortest amount
+of time, Our product is most likely to target working class people who dont have much time 
+to go to the shops. Our product will also include various help buttons and prompts to guide 
+users on how to use the software 
+\subsection{Product Function}
+Our product will have one main function which is allowing the user to input 
+items that they require and generating a route which will take the shortest amount
+of time, we would also like to add a lowest cost route which will take into account 
+the petrol spend as well as the prices of the items bought
+\subsection{User Classes and Characteristics}
+Our user class will be a general user with focus
+on people who have heavy time constraints with regards to work
+\subsection{Operating Environment}
+The operating environment will be majority of browsers as we will 
+integrate support for most big browsers, the coding environment will be Visual Studio and the
+Language will be C-Sharp
+\subsection{Assumptions and Dependencies}
+Our assumptions and dependencies include the fact that we will
+receive databases of items and their various prices from various supermarkets around Gauteng.
+We also assume that all price changes will be updated regularly by the supermarkets and we will 
+receive those changes as they happen. To simulate this we will create our own scaled down databases
+which will contain a few products and their respective prices
 \section{Intended User and User Goals}
 Our intended user is anyone who needs to go to a store or various stores to do their shopping. The system is aimed to recommend a shopping route for the user to follow, based on the items they require. This route could be the shortest path for the minimal total expenses or the shortest travel time to purchase all the items.
 \subsection{Key High Level Goals and Problems}
@@ -86,11 +116,11 @@ Throughout implementation, we will develop the back-end and front-end software i
 To ensure that our system is implemented correctly, we will make use of interface, validation and database testing.\\\\
 Interface testing will be used to check that all UI components (such as buttons) work and trigger their respective processes such as passing data from the forms to the database, changing pages, etc.\\\\
 Validation testing will be used to check and ensure that all data entered and passed from the interface forms to the database is of correct data type and format.\\\\
-Database testing will be used to check and ensure that data is captured and stored correctly within their respective datastores and attributes. This also ensures that our PathFinding algorithm retrieves and makes use of correct data to provide an accurate route to the user.\\\\
+Database testing will be used to check and ensure that data is captured and stored correctly within their respective data stores and attributes. This also ensures that our PathFinding algorithm retrieves and makes use of correct data to provide an accurate route to the user.\\\\
 Algorithm testing will be used to check and ensure that our PathFinding algorithm works and produces a correct route that is also mapped-out for the user.
 \section{External Interface Requirements}
 \subsection{User Interfaces}
-The design of our user interface plans to include both elegance and functionality, the GUI design is planned to suit all users and allow for users of all ages to easliy eneage with the application. We plan to ensure that our application has ease of navigation and a user interface that is both stylish and current.
+The design of our user interface plans to include both elegance and functionality, the GUI design is planned to suit all users and allow for users of all ages to easily engage with the application. We plan to ensure that our application has ease of navigation and a user interface that is both stylish and current.
 \subsection{Hardware Interfaces}
 Due to the sheet scale of the project the need for dedicated devices and support hardware is not necessary at this point in time, but as the project start to gain popularity amongst users it could call for the use of large scale severs to sore all user information, that would need to be based around the world to ensure that all users from all corners of the globe get the same quality software.
 \subsection{Software Interfaces}
@@ -130,7 +160,7 @@ Priority: Very High\\
  \subsection{Minimum Travel Time}
 \subsubsection{Description and Priority}
  Priority: High\\
- This feature uses the same input information as Minimum Shopping Expenses 2 (feature 2.2) (shopping list and current location) and outputs an ordered list of shops preferencing a short route length and travel time over actual shopping expenses.  
+ This feature uses the same input information as Minimum Shopping Expenses 2 (feature 2.2) (shopping list and current location) and outputs an ordered list of shops with preference to a short route length and travel time over actual shopping expenses.  
 \\\\
 \textbf{Map:} A further extension of this feature will be to show the shops on a map with directions of the route.
  \subsubsection{Stimulus and Response Sequence}
@@ -189,7 +219,20 @@ The requirements for this feature would extend to added databases to store user-
  This feature would require constant access to the users GPS and perhaps some added input from the user.
  
  \section{Security Requirements}
- This product has several security and privacy issues that must be addressed. Concerning user authentication the product will require a valid email address to create an account, then they will require a unique user-name and password pair to ensure no cross contamination of private user information and to prevent access to the users sensitive and personal stored information, such as home or work address, email address, password and frequent or favourite routes. The developers will also have to provide guarantees to participating shops that provide classified and valuable databases of their stock prices that no malicious user or third party will be able to obtain this data beyond the intended scope of the product.  
+ This product has several security and privacy issues that must be addressed. Concerning user authentication the product will require a valid email address to create an account, then they will require a unique user-name and password pair to ensure no cross contamination of private user information and to prevent access to the users sensitive and personal stored information, such as home or work address, email address, password and frequent or favourite routes. The developers will also have to provide guarantees to participating shops that provide classified and valuable databases of their stock prices that no malicious user or third party will be able to obtain this data beyond the intended scope of the product. 
+ 
+\section{Team Contribution}
+Section 1: Storm Menges\\
+Section 2: Sabeehah Ismail\\
+Section 3: Sabeehah Ismail\\
+Section 4: Sabeehah Ismail\\
+Section 5: Sabeehah Ismail\\
+Section 6: Sergio Oliviera\\
+Section 7: Levi Goldfein\\
+Section 8: Levi Goldfein\\
+
+
+
  
  
 \end{document}
