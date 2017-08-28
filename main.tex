@@ -18,14 +18,77 @@
 %Or just google stuff
  
 \title{Software Requirement specification }
-\author{Authors\\Levi Goldfein 1257360}
+\author{Authors\\Levi Goldfein 1257360\\Sabeehah Ismail 797621}
 \maketitle
  
 \begin{Project}{: Shopping Route Recommender}
 
 \end{Project}
-\section{sect 1} 
-I think as people add their parts in the correct order the section numbers will update themselves???....
+\section{Product Scope} 
+Our system is a shopping route recommender (SRRec) that maps out a route of the nearest shops in the user's area. The user will identify the items that they need to go shopping for, which could be groceries, clothing, appliances, etc. The items will be logged into a shopping list. On the user's required shopping day, they will run the SRRec and obtain a recommended route of shops to follow in a particular order to purchase the items they listed.\\\\
+The SRRec will be a web-application and therefore should run on any supported web browser that has online access. The database stores each shop in the area with the items that they sell, and their respective prices.\\
+Not only will the SRRec recommend a route of shops to purchase the user's required items, but it may also provide a route based on the shortest path for the minimal total expenses or the shortest travel time.\\\\
+The benefits of the SRRec are the following:\\
+-The user is given a recommended route of the nearest shops in the area to purchase their required items.\\
+-If the user wants a route to purchase their items at the cheapest prices, the SRRec will provide a route based on the shortest path for the minimal total expenses.\\
+-If the user wants a route that will allow them to purchase their items in the least amount of time, the SRRec will provide a route based on the shortest travel time.
+
+\section{Intended User and User Goals}
+Our intended user is anyone who needs to go to a store or various stores to do their shopping. The system is aimed to recommend a shopping route for the user to follow, based on the items they require. This route could be the shortest path for the minimal total expenses or the shortest travel time to purchase all the items.
+\subsection{Key High Level Goals and Problems}
+The user may not know where to go in order to purchase all the items they need. The user may also require a route that allows them to buy the items at the cheapest prices, or a route that takes the least amount of time.
+With this system, not only will the user be given a recommended route to shop for their items but it may also provide a route for minimal expenses or shortest travel time.
+\subsection{User Level Goals}
+To enter the items that they need to go shopping for and thereafter obtain a recommended shopping route to purchase these items for the minimal total expenses or the shortest travel time.
+\subsection{Environment}
+Either at home, work, or anywhere with online access.
+
+\section{Constraints}
+\subsection{Legal Issues}
+We may come across issues where shops may not want to share their databases (such as items and prices) with us. Therefore, if we populate our system's database with such information, we may incur legal ramifications due to breach of confidentiality and incorrect listings of data. 
+\subsection{Implementation and Software}
+If we do come across issues whereby we cannot use a shop's database, our system may not make use of it in the PathFinding Algorithm and therefore the shop won't be listed on the route. This could lead to a situation where the shop may be in the shortest path but because we cannot make use of it, the user may not obtain an accurate route based on their surroundings or shopping requirements.\\\\
+We are limited by our implementation time as we are students with our own time constraints.\\\\
+Since we plan to make use of Google Maps API for mapping the shopping routes, we are limited to the stores that exist on Google Maps.\\\\
+Our system's database is limited to the regular pricing of items as we do not take into account item sales that can occur at shops. This also leads to a situation where our system generates a path that may not be accurate according to real-time changes.\\\\
+The user is constrained to using a supported browser in order to make use of our web-application.
+\subsection{Hardware}
+Since our system is an online web-application, it is constrained by the response time and performance of the server and internet connection.
+
+\section{Pricing and Implementation Costs}
+The possible costs that we may incur are:\\\\
+-A domain for the web-application.\\
+ R197 once-off   (.co.za)\\
+ https://www.afrihost.com/site/product/domain{\_}registration\\\\
+-A server to host the web-application.\\
+\$358 upfront \\
+(Standard 1 year term: t2.micro for Windows with SQL Web in EU-frankfurt)\\
+https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/\\\\
+-Development time and maintenance.\\
+Subject to working hours and consulting rates of the development team.
+
+\section{Quality}
+\subsection{Correctness}
+The user will create an account if they are not registered on the system. If the user has an account then they will log in. The user then enters the items they require and will run the SRRec when they want to go shopping.\\
+When the user runs the software, the SRRec must take the user's list of items, compare it to the system's database, run the required PathFinding Algorithm (shortest path for the minimal total expenses or the shortest travel time) and return the mapped-out route to the user.
+\subsection{Reliability and Efficiency}
+Because the SRRec is a web-application, the reliability of the system is reliant on the performance and response time of the server and internet connection. 
+\subsection{Integrity}
+Since the SRRec generates the required shortest paths by making use of the data from various shops' databases, we need to ensure that these databases are secure to protect each store's confidentiality. \\
+We should make use of SSL, TSL, and HTTPS to ensure security within our system's online connections and data communications.
+\subsection{Usability and Portability}
+Since we do not plan on including a help function (for novice users) within our web-application, we want to implement the user interface to be as simple and user friendly as we can make it, to promote ease-of-use over ease-of-learning.\\
+We will make use of HCI principles and keep consistency throughout the web-application's interfaces. This will allow users to become comfortable and familiar with using the system.\\
+Since the SRRec is a online web-application, it can be used on all supporting web browsers (PC and mobile devices) and this allows the user to run the SRRec wherever they may be, granted they have good internet connection.\\
+\subsection{Maintainability, Flexibility and Reusability}
+Throughout implementation, we will develop the back-end and front-end software in a logical and consistent way so that we may easily make software changes if needed and if a problem occurs, we may locate and fix the issue easily. This also allows us to adequately reuse some parts of the software.
+\subsection{Testability}
+To ensure that our system is implemented correctly, we will make use of interface, validation and database testing.\\\\
+Interface testing will be used to check that all UI components (such as buttons) work and trigger their respective processes such as passing data from the forms to the database, changing pages, etc.\\\\
+Validation testing will be used to check and ensure that all data entered and passed from the interface forms to the database is of correct data type and format.\\\\
+Database testing will be used to check and ensure that data is captured and stored correctly within their respective datastores and attributes. This also ensures that our PathFinding algorithm retrieves and makes use of correct data to provide an accurate route to the user.\\\\
+Algorithm testing will be used to check and ensure that our PathFinding algorithm works and produces a correct route that is also mapped-out for the user.
+
 \section{System Features}
 \subsection{Minimum Shopping Expenses 1}
 \subsubsection{Description and Priority}
