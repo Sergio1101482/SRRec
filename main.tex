@@ -18,7 +18,7 @@
 %Or just google stuff
  
 \title{Software Requirement specification }
-\author{Authors\\Levi Goldfein 1257360\\Sabeehah Ismail 797621}
+\author{Authors\\Levi Goldfein 1257360\\Sabeehah Ismail 797621\\ Sergio Oliveira 1101482}
 \maketitle
  
 \begin{Project}{: Shopping Route Recommender}
@@ -88,6 +88,19 @@ Interface testing will be used to check that all UI components (such as buttons)
 Validation testing will be used to check and ensure that all data entered and passed from the interface forms to the database is of correct data type and format.\\\\
 Database testing will be used to check and ensure that data is captured and stored correctly within their respective datastores and attributes. This also ensures that our PathFinding algorithm retrieves and makes use of correct data to provide an accurate route to the user.\\\\
 Algorithm testing will be used to check and ensure that our PathFinding algorithm works and produces a correct route that is also mapped-out for the user.
+\section{External Interface Requirements}
+\subsection{User Interfaces}
+The design of our user interface plans to include both elegance and functionality, the GUI design is planned to suit all users and allow for users of all ages to easliy eneage with the application. We plan to ensure that our application has ease of navigation and a user interface that is both stylish and current.
+\subsection{Hardware Interfaces}
+Due to the sheet scale of the project the need for dedicated devices and support hardware is not necessary at this point in time, but as the project start to gain popularity amongst users it could call for the use of large scale severs to sore all user information, that would need to be based around the world to ensure that all users from all corners of the globe get the same quality software.
+\subsection{Software Interfaces}
+Our software plans to make use of MVC( Model-View-Controller) architectural pattern which separates an application into three main components:\\
+-	Models : Models objects are the part of the application that implement the logic for the applications data domain, they often retrieve and store model state in a database.\\
+-	Views: Views are the components that display the applications user interface \\
+-	Controllers: Controllers are the components that handle user interaction, work with the model , and ultimately select a view to render that display. The controller handles and responds to user input and interaction.\\
+   
+
+Our database will be developed on a SQL server as it works well with the MVC framework as well as C-Sharp, has a huge amount of functionality and allows for scalability and growth of the software if needed. 
 
 \section{System Features}
 \subsection{Minimum Shopping Expenses 1}
