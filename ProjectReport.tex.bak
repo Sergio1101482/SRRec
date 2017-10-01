@@ -60,6 +60,17 @@ After cloning the program from \url{https://github.com/Sergio1101482/SRRec.git}\
 \textbf{Step 4:} Once loaded, click \textbf{Build} in the navigation bar, then click \textbf{Build Solution} and wait for the build to complete\\
 \textbf{Step 5:} Run the program by clicking the \textbf{Run} button (the {\color{green} \textbf{GREEN}} play button in navigation bar)
 
+
+\section{Problem Statement}
+Our application is setup to address the problem faced by  busy mothers, businessmen and the general population everyday, a lack of time. With the pace of the world increasing all the time,as well as struggling financially, people struggle to go to one shop to purchase their necessities, let alone shop around to get the best bargains and value for money. Our program solves this issue by, cleverly, doing the hard work for you!    
+
+\section{Problem Objectives}
+Our program solves the issues mentioned in the problem statement by taking in a shopping list from the user as input and then searches through our databases for the items requested and then finds the best shops whether by cheapest items or shortest route (requested by the user) and outputs a map with the route of shops the user should take to achieve their goal. Saving them much needed time and money.
+
+\section{Stakeholders and Stakeholders Descriptions}
+\subsection{Shopper}
+\subsubsection{Goals}
+To receive a recommended route that they can follow in order to find the shops near them, that sell the required items/products that they need to shop for
 \section{Sprint Retrospective}
 \subsection{Sprint 1: 24 Aug-31 Aug}
 \underline{What did we do well?}
