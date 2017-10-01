@@ -105,7 +105,7 @@ underline{What did we do well?}
 \end{itemize}
 
 \begin{figure}[H]
-  \includegraphics[width=15cm,height=5cm]{SprintBoard.jpg}
+  \includegraphics[width=\textwidth,height=7cm]{SprintBoard.jpg}
   \centering
   \caption{An example of our Sprint Board.}
 %%%%  \label{fig:boat1}
