@@ -48,7 +48,20 @@
 \pagebreak
 
 \section{Project Overview}
-Discuss Overview of Project here.
+The Shopping Route Recommender (SRRec) enables a shopper to map out a route of the nearest shops in the neighbourhood to visit in order to meet their shopping needs. The system will retrieve and display a list of products that are available from the Shops' databases. The shopper/user will select their required products from the list and these will be temporarily stored in a shopping list. When the user has completed their shopping list, the system will search through the database for the relevant stores that sell the selected products. Preference will go to the shops that are close-by and sell all the required products. The system will then use the addresses of these relevant shops to calculate the shortest path, as well as the external tool, Google Maps API, to map out the route and display it to the user.
+\\\\
+The SRRec has been implemented as a web-application, so that users may access the system on their pc or mobile device (through the web browser). 
+Since we have implemented a prototype of the system, we had to make the following assumptions:
+\\
+\begin{itemize}
+\item We are working on a small-world example for now, where there are only a few stores available within the user's vicinity.
+\item The starting location is the user's home. 
+\item Each shop follows a similar database structure and the same naming conventions.
+\item We will not take brands into account, but will use simple product names instead, e.g. bread, milk, eggs, etc. 
+\item We do not take stop-overs into account. Stop-overs include coffee, drinks, lunch, etc. 
+\item It is assumed that the user requires the route immediately after logging the products in the shopping list. The shopping list is cleared when the user closes the web-application, and will therefore be required to start a new shopping list the next time they request a recommended shopping route.
+\item Our system retrieves Product and Price data from Shops that have agreed to give us access to their databases. 
+\end{itemize}
 
 \section{Problem Statement}
 Our application is setup to address the problem faced by  busy mothers, businessmen and the general population everyday, a lack of time. With the pace of the world increasing all the time,as well as struggling financially, people struggle to go to one shop to purchase their necessities, let alone shop around to get the best bargains and value for money.
