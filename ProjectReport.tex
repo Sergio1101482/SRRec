@@ -275,9 +275,6 @@ Will require software to calculate shortest route and perhaps traffic awareness 
  As well as the functional requirements listed in Features 2.2 and 2.3.
  %new lines to put Section 2.5 to the next page
  \\
- \\
- \\
- \\
  \subsubsection{Account/Login}
 \subsubsection*{Description and Priority}
  Priority: Medium\\
@@ -347,6 +344,116 @@ Create Shopping List & This use case creates a Shopping List that temporarily st
 Generate Shortest Path & This use case runs the shortest path function which calculates, maps and displays a recommended shopping route to the user, based on the items/products they require. & Developer, Shopper, Google Maps API(external)\\
 \hline
 \end{tabu}
+
+\section{Design and Domain Models (UML)}
+For our system, Shopping Route Recommender (SRRec), we constructed the following models as we found these appropriate for the implementation of our web-application.
+\begin{itemize}
+\item Entity-Relationship Diagram
+\item Data Flow Diagram
+\item CRC Cards
+\item Class Diagram
+\item Sequence Diagram
+\item Use Case Diagram
+\end{itemize}
+We did not model any State Machine diagrams, because our database does not store the status/state of any entities. Our system retrieves Product and Price data from shops that have agreed to give us access to their databases.\\
+Only for the sake of producing a prototype of our system at this stage, we have decided to store the database internally for now. Our web-application thus stores the data internally in Visual Studio.
+\subsection{Entity-Relationship and Class Diagram}
+The Entity-Relationship Diagram (ERD) and Class Diagram were constructed according to the following business rules:
+\begin{itemize}
+\item One Shop has zero-to-many Prices. \\(Beacuse a Shop can sell zero-to-many Products)
+\item One Price belongs to one Shop
+\item One Product has one-to-many Prices. \\(Because Shops can sell Products at different Prices)
+\item One Price belongs to one Product.
+\end{itemize}
+Class:Shop\\
+Primary Key: Shop\textunderscore Name \\ \\
+Class: Price\\
+Primary Key: Price\\
+Foreign Key: Shop\textunderscore Name and Product\textunderscore Name\\ \\
+Class:Product\\
+Primary Key: Product\textunderscore Name\\\\
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth ,height=6cm]{ERD.png}
+  \centering
+  \caption{SRRec Entity-Relationship Diagram}
+  \label{fig:Entity-Relationship Diagram}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth ,height=4cm]{ClassDiagram.png}
+  \centering
+  \caption{SRRec UML Class Diagram:association class as a full class(Price)}
+  \label{fig:Class Diagram}
+\end{figure}
+
+
+
+\subsection{Data Flow Diagram(DFD)}
+The process begins when the Shopper (user) requests for a recommended shopping route. The system will retrieve a list of product names from the Product datastore and display them for the user to select their required products. These selected products will be logged into the shopping list, which is stored temporarily on the web-application. When the user has completed their shopping list, the system will search for shops from the Shop datastore that sell the required products. These relevant shop addresses will then be parsed to the “Generate Shortest Path” function where the web-application will make use of Google Maps API (external tool) to map the recommended route and thus display it to the user.\\\\
+Note: It is assumed that the user requires the route immediately after logging the products in the shopping list.\\
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth ,height=8cm]{DFD.png}
+  \centering
+  \caption{SRRec Data Flow Diagram}
+  \label{fig:Data Flow Diagram}
+\end{figure}
+
+\subsection{Class-Responsibility-Collaborators (CRC) Cards}
+We decided to make use of CRC cards, because they are helpful for early analysis in software development. These cards help identify/specify system and design components, quickly and informally.\\
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth ,height=8cm]{ShopCRC.png}
+  \centering
+  \caption{SRRec Shop CRC}
+  \label{fig:Shop CRC}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth ,height=8cm]{PriceCRC.png}
+  \centering
+  \caption{SRRec Price CRC}
+  \label{fig:Price CRC}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth ,height=6cm]{ProductCRC.png}
+  \centering
+  \caption{SRRec Product CRC}
+  \label{fig:Product CRC}
+\end{figure}
+
+\subsection{Sequence Diagram}
+The SRRec sequence diagram follows the same logic process/flow as the data flow diagram (DFD).
+\\
+The Shopper (user) requests for a recommended shopping route. The process will then start and the system will request a list of product names from the Product datastore. These product names will be displayed for the user to select their required products. These selected products will be logged into the shopping list, which is stored temporarily on the web-application. When the user has completed their shopping list, the system will search for shops from the Shop datastore that sell the required products. These relevant shop addresses will then be parsed to the Google Maps API (external tool) in order to map the recommended route and thus display it to the user.
+\\\\
+Note: It is assumed that the user requires the route immediately after logging the products in the shopping list. The shopping list is cleared when the user closes the web-application, and will therefore be required to start a new shopping list the next time they request a recommended shopping route.\\
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth ,height=10cm]{SequenceDiagram.png}
+  \centering
+  \caption{SRRec Sequence Diagram}
+  \label{fig:Sequence Diagram}
+\end{figure}
+
+
+\subsection{Use Case Diagram}
+The use case diagram provides an overview of the set of use cases and the actors that interact with them.\\
+Our system has four actors: The Shopper (user), Developer and two external actors, the Shop Outlet and Google Maps API.\\
+Because our system makes use of Product and Price data that is retrieved from their respective Shop databases, the Shop Outlet is responsible for providing us with updated and correct data.\\
+The Developer is responsible for the maintenance of the system’s functional processes as well as which Shops are added or removed from the system.\\
+The Shopper (user) will view the products available when creating and logging their shopping list,and thus request a recommended shopping route/shortest path.\\
+The external actor, Google Maps API, will be the external tool used to generate the shortest path by mapping the relevant shops and displaying the route to the user.\\
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth ,height=20cm]{UseCaseDiagram.png}
+  \centering
+  \caption{SRRec Use Case Diagram}
+  \label{fig:Use Case Diagram}
+\end{figure}
+
 
 \section{Sprint Retrospective}
 \subsection{Sprint 1: 24 Aug-31 Aug}
@@ -484,64 +591,5 @@ Click "Customise" shows\\"Functionality to come with update" message & PASS\\ \h
 Click "Account Settings" shows\\"Functionality to come with update" message & PASS\\ \hline
 \end{tabular}
 \end{center}
- 
 
-
-
-
-
-
-\section{This is section }
-\subsection{This is a subsection}
-This is an example to show how the table of contents works. Just add sections and subsections as necessary. If the section should precede a certain section just add it in the correct place and the table of contents will auto-update itself. 
-
- 
-
-\section{This is section }
-\subsection{Adding images}
-Here we shall add some pictures\\
-\subsection{Centered}
-This image is centred
-\begin{figure}[H]
-  \includegraphics[width=6cm,height=6cm]{earth.jpg}
-  \centering
-  \caption{An earth.}
-  \label{fig:boat1}
-\end{figure}
-
-\subsection{Wrapped}
-NNNNNBBBBBBB
-Notice how only the text after the end{wrapped} figure is wrapped
-\textbf{This image is wrapped with the text the image will be on the right of the text} 
-After dog smells cat. Above the conductor migrates cat. Can the opened family roll near dog? Cat charts the jury in the merged courier.It is speculated that his placement in the immediate line of succession occurred due to his qualities.
-
-\begin{wrapfigure}{r}{0.25\textwidth}
-\centering
-  \includegraphics[width=5cm]{mario.png}
-  \caption{A mario.}
-  \label{fig:a mario}
-  \end{wrapfigure}
-  
-  
-After dog smells cat. Above the conductor migrates cat. Can the opened family roll near dog? Cat charts the jury in the merged courier.It is speculated that his placement in the immediate line of succession occurred due to his qualities. First, he has a conciliatory and diplomatic nature. He headed the family council, called The Descendants' Council (Majlis al Uthra in Arabic), that was established by King Fahd in 2000 to solve family matters, reach consensus and try to avoid any publicly embarrassing behaviour of some family members.[16][17] Second, Salman belongs to the "middle generation" in the royal family; therefore, he could develop close ties with both generations socially and culturally. Last, as a result of his long-term governorship, he had developed a network of relationships within Arab and international circles.[18]It is speculated that his placement in the immediate line of succession occurred due to his qualities. First, he has a conciliatory and diplomatic nature. He headed the family council, called The Descendants' Council (Majlis al Uthra in Arabic), that was established by King Fahd in 2000 to solve family matters, reach consensus and try to avoid any publicly embarrassing behaviour of some family members.[16][17] Second, Salman belongs to the "middle generation" in the royal family; therefore, he could develop close ties with both generations socially and culturally. Last, as a result of his long-term governorship, he had developed a network of relationships within Arab and international circles.[18]It is speculated that his placement in the immediate line of succession occurred due to his qualities. First, he has a conciliatory and diplomatic nature. He headed the family council, called The Descendants' Council (Majlis al Uthra in Arabic), that was\\\\
-
-
-\textbf{This image will be wrapped to the left of the text}
-
-
-\begin{wrapfigure}{l}{0.25\textwidth}
-\centering
-  \includegraphics[width=5cm]{oranges.png}
-  \caption{A orange.}
-  \label{fig:a orange}
-  \end{wrapfigure}
-
-
- established by King Fahd in 2000 to solve family matters, reach consensus and try to avoid any publicly embarrassing behaviour of some family members.[16][17] Second, Salman belongs to the "middle generation" in the royal family; \\therefore, he could develop close ties with both generations socially and culturally. Last, as a result of his long-term governorship, he had developed a network of relationships within Arab and international circles.[18]It is speculated that his placement in the immediate line of succession occurred due to his qualities. First, he has a conciliatory and diplomatic nature. He headed the family council, called The Descendants' Council (Majlis al Uthra in Arabic), that was established by King Fahd in 2000 to solve family matters, reach consensus and try to avoid any publicly embarrassing behaviour of some family members.[16][17] Second, Salman belongs to the "middle generation" in the royal family; therefore, he could develop close ties with both generations socially and culturally. Last, as a result of his long-term governorship, he had developed a network of relationships within Arab and international circles.[18]
- 
-\section{Section }
-\subsection{yeah}
-this is a simple test sections so just ignore it 
- 
- 
 \end{document}
