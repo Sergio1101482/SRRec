@@ -3,10 +3,19 @@
 \usepackage{amsmath,amsthm,amssymb,amsfonts}
   \usepackage{graphicx}
 \usepackage{wrapfig} 
+\usepackage{color}
+\usepackage[utf8]{inputenc}
  \graphicspath{ {Images/} }
  \usepackage{float}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
  
 \newenvironment{Project}[2][Project]{\begin{trivlist}
 \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
@@ -35,6 +44,21 @@
 \tableofcontents
 \pagebreak
 
+\section{How to compile code and start modules}
+{\color{red} N.B The following software packages are required to compile and view the code
+\begin{itemize}
+\item Local DB
+\item SQL Server
+\item Visual Studio
+\end{itemize}}
+\hfill\\
+After cloning the program from \url{https://github.com/Sergio1101482/SRRec.git}\\
+\hfill
+\textbf{Step 1:} Open Visual Studio\\
+\textbf{Step 2:} Click \textbf{File}, then \textbf{Open}, then\textbf{Project/Solution}\\
+\textbf{Step 3:} Navigate to \textbf{InterfaceSE} file (which will       be located in the cloned folder) and open it, then double click on \textbf{Interface.sln}\\
+\textbf{Step 4:} Once loaded, click \textbf{Build} in the navigation bar, then click \textbf{Build Solution} and wait for the build to complete\\
+\textbf{Step 5:} Run the program by clicking the \textbf{Run} button (the {\color{green} \textbf{GREEN}} play button in navigation bar)
 
 \section{Sprint Retrospective}
 \subsection{Sprint 1: 24 Aug-31 Aug}
@@ -113,7 +137,50 @@ underline{What did we do well?}
 
 
 
+\section{Testing}
+\subsection{Back-End Testing}
+\begin{center}
+\begin{tabular}{|l | c|}
+\hline  
+\textbf{Back-end Tests} & \\ \hline
+\textbf{TEST} & \textbf{PASS/FAIL} \\ \hline% heading
+Retrieving entries from database & PASS\\ \hline
+Shortest path calculation & PASS\\ \hline
+Adding new product & PASS\\ \hline
+Adding new shop & PASS\\ \hline
+Delete product & PASS\\ \hline
+Delete shop & PASS\\ \hline
+Edit shop name & PASS\\ \hline
+Edit price & PASS\\ \hline
+Edit shop address & PASS\\ \hline
+Edit product name & PASS\\ \hline
+\end{tabular}
+\end{center}
 
+\subsection{Front-end Testing}
+\begin{center}
+\begin{tabular}{|l | c|}
+\hline  
+\textbf{Front-end Tests}&\\\hline
+\textbf{TEST} & \textbf{PASS/FAIL} \\ \hline
+Click button "Shopping Route Recommender"shows\\ "Shortest Path" button and "Lowest Cost" button  & PASS\\ \hline
+Click "Shortest Path" button shows\\
+table of products on screen & PASS\\ \hline
+Click "Lowest Cost" shows \\"Functionality to come with update" message & PASS\\ \hline
+Click on products on tables makes them grey out & PASS\\ \hline
+Click on products on tables adds them to selected list & PASS\\ \hline
+Click "Done" button displays shortest path on screen & PASS\\ \hline
+Click "About Us" button shows\\"Description" and "Contact Us" buttons & PASS\\ \hline
+Click "Description" button shows\\ company description on screen & PASS\\ \hline
+Click "Contact Us" button shows\\ company contact information & PASS\\ \hline
+Click "Help" button shows\\"FAQ" and "How to Use" buttons & PASS\\ \hline
+Click "FAQ" button shows\\ all frequently asked questions & PASS\\ \hline
+Click "How to Use" button show\\ How to make use of the application screen & PASS\\ \hline
+Click "Settings" button shows\\ "Customise" and "Account Settings" buttons & PASS\\ \hline
+Click "Customise" shows\\"Functionality to come with update" message & PASS\\ \hline
+Click "Account Settings" shows\\"Functionality to come with update" message & PASS\\ \hline
+\end{tabular}
+\end{center}
  
  \section{System Requirements}
  \subsection{Product Scope} 
