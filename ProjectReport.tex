@@ -62,11 +62,47 @@ After cloning the program from \url{https://github.com/Sergio1101482/SRRec.git}\
 
 
 \section{Problem Statement}
-Our application is setup to address the problem faced by  busy mothers, businessmen and the general population everyday, a lack of time. With the pace of the world increasing all the time,as well as struggling financially, people struggle to go to one shop to purchase their necessities, let alone shop around to get the best bargains and value for money. Our program solves this issue by, cleverly, doing the hard work for you!    
+Our application is setup to address the problem faced by  busy mothers, businessmen and the general population everyday, a lack of time. With the pace of the world increasing all the time,as well as struggling financially, people struggle to go to one shop to purchase their necessities, let alone shop around to get the best bargains and value for money.
 
 \section{Problem Objectives}
 Our program solves the issues mentioned in the problem statement by taking in a shopping list from the user as input and then searches through our databases for the items requested and then finds the best shops whether by cheapest items or shortest route (requested by the user) and outputs a map with the route of shops the user should take to achieve their goal. Saving them much needed time and money.
 
+\section{Stakeholders and Stakeholders Descriptions}
+\subsection{Shopper}
+\subsubsection{Goals:}
+To receive a recommended route that they can follow in order to find the shops near them, that sell the required items/products that they need to shop for.
+\subsubsection{Summary:}
+The Shopper is the stakeholder who will make use of our system, the Shopping Route Recommender (SRRec/"the system"). The Shopper (user) will create their shopping list by selecting the products that they need to go shopping for, from a list of products. When the user has completed their shopping list, the system will search for the relevant shops that sell the required products. The system will make use of these shops' addresses to map out the shortest path on the Google Maps API and this route will be displayed to the Shopper to follow
+\subsubsection{Environment:}
+The SRRec is a web-application and so the Shopper can use the system wherever they have internet
+access.
+\subsection{Developer}
+\subsubsection{Goals:}
+To implement a system that recommends a route for the user to follow in order to find shops near them that sell the required items that the shopper requires, in an easy, user-friendly and efficient manner.
+\subsubsection{Summary:}
+The Developer should analyse, design and implement a web-application that retrieves a list of the
+available products from the Shops’ databases. The user must then be able to select their required
+products from this list, which will be logged into a shopping list that must be temporarily stored. The
+Developer must then implement a function that will search through the Shops in the database for
+relevant stores, giving preference to Shops that are close-by and sell all the required products. The
+addresses of the relevant Shops must then be parsed to the external tool, Google Maps API, where a
+shortest path will be generated, mapped and displayed to the user. The Developer must perform
+appropriate testing on the system and functions, as well as perform required system maintenance
+and security.
+\subsubsection{Environment:}
+The Developers workplace.
+\subsection{Shop Outlet}
+\subsubsection{Goals:}
+To gain more customers through this web-application as it recommends the store to Shoppers that
+are close-by, granted that the store sells the Shopper’s required items.
+\subsubsection{Summary:}
+In order for the Shop Outlet to possibly appear on the web-application, the Shop Outlet must give
+the Developers access to their database, such as products, prices, and address. This allows the
+system to retrieve the list of products available to the user, and use the Shop’s address to generate
+the shortest path for the shopping route. It is the responsibility of the Shop Outlet to keep its
+database updated and accessible to the Developers.
+\subsubsection{Environment:}
+The Shop Outlet’s workplace/location.
 
 \section{Sprint Retrospective}
 \subsection{Sprint 1: 24 Aug-31 Aug}
