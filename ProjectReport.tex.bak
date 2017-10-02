@@ -465,10 +465,10 @@ The external actor, Google Maps API, will be the external tool used to generate 
 
 \section{Sprint Planning}
 \subsection{Sprint 1: 24 Aug-31 Aug}
-\begin{tabu} to \textwidth{| X[c] | X[c] |} \hline
+\begin{tabu} to \textwidth{| X[l] | X[l] |} \hline
 \textbf{Story Title} & \textbf{Team}\\
 \hline
-Complete Lab1 & everyone\\
+Complete Lab1 & Everyone\\
 \hline
 Design the database & Sergio and Levi\\
 \hline
@@ -477,11 +477,11 @@ Design the front-end user interface & Storm and Sabeehah\\
 \end{tabu}
 
 \subsection{Sprint 2: 31 Aug-7 Sep}
-\begin{tabu} to \textwidth{| X[c] | X[c] |} \hline
+\begin{tabu} to \textwidth{| X[l] | X[l] |} \hline
 \textbf{Story Title} & \textbf{Team}\\
 \hline
-Keep up to date with documentation & everyone\\ \hline
-Complete system requirements documentation & everyone\\ \hline
+Keep up to date with documentation & Everyone\\ \hline
+Complete system requirements documentation & Everyone\\ \hline
 Build database & Sergio and Levi\\ \hline
 Implement user creates shopping list & Sabeehah and Storm\\ \hline
 Developer adds new shop & Sergio and Levi\\ \hline
@@ -489,13 +489,21 @@ System reads info from shops datastore & Sergio and Levi\\ \hline
 System fetches product from database & Sergio and Levi\\ \hline
 User sees products on user-interface (screen) & Storm and Sabeehah\\ \hline
 User clicks "About Us" button redirected to "Description" and "Contact Us" & Storm and Sabeehah\\ \hline
-User clicks "Help" button redirected to "How to Use" and FAQ" & Sabeehah and Storm\\ \
+User clicks "Help" button redirected to "How to Use" and FAQ" & Sabeehah and Storm\\ \hline
 \end{tabu}
 
 \subsection{Sprint 3: 7 Sep-21 Sep}
-\begin{tabu} to \textwidth{| X[c] | X[c] |} \hline
+\begin{tabu} to \textwidth{| X[l] | X[l] |} \hline
 \textbf{Story Title} & \textbf{Team}\\
 \hline
+User clicks "Description" button is shown description of company & Levi\\ \hline
+User clicks "Contact Us" button is shown the company's contact information & Sabeehah\\ \hline
+User clicks "How to Use" button is shown instruction on how to use application & Storm\\ \hline
+User clicks "FAQ" button is shown a list of frequently asked questions with answers & Sergio\\ \hline
+System reads price from database & Storm and Sabeehah\\ \hline
+Generate shortest path & Storm and Sergio\\ \hline
+Complete documentation & Everyone\\ \hline
+Edit (spelling, grammar and layout of) document & Sabeehah and Levi\\ \hline
 \end{tabu}
 
 \section{Sprint Retrospective}
@@ -634,5 +642,97 @@ Click "Customise" shows\\"Functionality to come with update" message & PASS\\ \h
 Click "Account Settings" shows\\"Functionality to come with update" message & PASS\\ \hline
 \end{tabular}
 \end{center}
+
+\section{Description Demonstration}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\textwidth]{Screenshot__8_.png}
+\caption{Start up of Program}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\textwidth]{Screenshot__9_.png}
+\caption{About Button Clicked}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\textwidth]{Screenshot__10_.png}
+\caption{Help Button Clicked}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\textwidth]{Screenshot__11_.png}
+\caption{Settings Button Clicked}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\textwidth]{Screenshot__12_.png}
+\caption{After Startup Shortest path button clicked}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\textwidth]{Screenshot__13_.png}
+\caption{After About button clicked , description button clicked}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\textwidth]{Screenshot__14_.png}
+\caption{After About button clicked , contact us button clicked}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\textwidth]{Screenshot__15_.png}
+\caption{After Help button clicked , FAQ button clicked}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\textwidth]{Screenshot__16_.png}
+\caption{After Help button clicked , How To Use button clicked}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\textwidth]{Screenshot__17_.png}
+\caption{After Settings button clicked , Customize button clicked}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\textwidth]{Screenshot__18_.png}
+\caption{After Settings button clicked , Account Settings button clicked}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\textwidth]{Screenshot__19_.png}
+\caption{Selecting products from list , ie products we intend to purchase}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\textwidth]{Screenshot__20_.png}
+\caption{Shortest path derived from selected products and availability}
+\end{center}
+\end{figure}
 
 \end{document}

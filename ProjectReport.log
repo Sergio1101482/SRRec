@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.21)  2 OCT 2017 06:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.21)  2 OCT 2017 07:17
 entering extended mode
 **./ProjectReport.tex
 (ProjectReport.tex
@@ -876,13 +876,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 376--383
 
  []
 
-<Images/ERD.png, id=447, 794.97pt x 323.2075pt>
+<Images/ERD.png, id=452, 794.97pt x 323.2075pt>
 File: Images/ERD.png Graphic file (type png)
  <use Images/ERD.png>
 Package pdftex.def Info: Images/ERD.png used on input line 385.
 (pdftex.def)             Requested size: 469.76819pt x 170.71721pt.
  [17]
-<Images/ClassDiagram.png, id=453, 683.55376pt x 108.405pt>
+<Images/ClassDiagram.png, id=458, 683.55376pt x 108.405pt>
 File: Images/ClassDiagram.png Graphic file (type png)
 
 <use Images/ClassDiagram.png>
@@ -898,7 +898,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 401--403
 
  []
 
-<Images/DFD.png, id=454, 1016.79875pt x 654.445pt>
+<Images/DFD.png, id=459, 1016.79875pt x 654.445pt>
 File: Images/DFD.png Graphic file (type png)
  <use Images/DFD.png>
 Package pdftex.def Info: Images/DFD.png used on input line 405.
@@ -909,21 +909,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 412--413
 
  []
 
-<Images/ShopCRC.png, id=463, 484.81125pt x 222.8325pt>
+<Images/ShopCRC.png, id=468, 484.81125pt x 222.8325pt>
 File: Images/ShopCRC.png Graphic file (type png)
 
 <use Images/ShopCRC.png>
 Package pdftex.def Info: Images/ShopCRC.png used on input line 415.
 (pdftex.def)             Requested size: 469.77809pt x 227.62276pt.
 
-<Images/PriceCRC.png, id=464, 481.04718pt x 218.31563pt>
+<Images/PriceCRC.png, id=469, 481.04718pt x 218.31563pt>
 File: Images/PriceCRC.png Graphic file (type png)
 
 <use Images/PriceCRC.png>
 Package pdftex.def Info: Images/PriceCRC.png used on input line 422.
 (pdftex.def)             Requested size: 469.76414pt x 227.62251pt.
  [19 <./Images/DFD.png> <./Images/ShopCRC.png>]
-<Images/ProductCRC.png, id=474, 478.03593pt x 210.03468pt>
+<Images/ProductCRC.png, id=479, 478.03593pt x 210.03468pt>
 File: Images/ProductCRC.png Graphic file (type png)
 
 <use Images/ProductCRC.png>
@@ -940,7 +940,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 436--441
  []
 
 [20 <./Images/PriceCRC.png> <./Images/ProductCRC.png>]
-<Images/SequenceDiagram.png, id=483, 1033.8625pt x 503.8825pt>
+<Images/SequenceDiagram.png, id=488, 1033.8625pt x 503.8825pt>
 File: Images/SequenceDiagram.png Graphic file (type png)
 
 <use Images/SequenceDiagram.png>
@@ -952,36 +952,125 @@ Underfull \hbox (badness 10000) in paragraph at lines 451--457
  []
 
 [21 <./Images/SequenceDiagram.png>]
-<Images/UseCaseDiagram.png, id=490, 860.21375pt x 1275.76625pt>
+<Images/UseCaseDiagram.png, id=495, 860.21375pt x 1275.76625pt>
 File: Images/UseCaseDiagram.png Graphic file (type png)
 
 <use Images/UseCaseDiagram.png>
 Package pdftex.def Info: Images/UseCaseDiagram.png used on input line 459.
 (pdftex.def)             Requested size: 469.75882pt x 569.04767pt.
  [22 <./Images/UseCaseDiagram.png>] [23]
-[24] <Images/SprintBoard.jpg, id=505, 1028.34187pt x 548.0475pt>
+[24] <Images/SprintBoard.jpg, id=510, 1028.34187pt x 548.0475pt>
 File: Images/SprintBoard.jpg Graphic file (type jpg)
 
 <use Images/SprintBoard.jpg>
 Package pdftex.def Info: Images/SprintBoard.jpg used on input line 578.
 (pdftex.def)             Requested size: 426.801pt x 284.53476pt.
  [25] [26 <./Images/SprintBoard.jpg>] [27]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 646.
- [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 646.
+<Images/Screenshot__8_.png, id=527, 1371.1225pt x 770.88pt>
+File: Images/Screenshot__8_.png Graphic file (type png)
 
-(ProjectReport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 646.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 646.
+<use Images/Screenshot__8_.png>
+Package pdftex.def Info: Images/Screenshot__8_.png used on input line 649.
+(pdftex.def)             Requested size: 469.75502pt x 264.10715pt.
+ [28]
+<Images/Screenshot__9_.png, id=532, 1371.1225pt x 770.88pt>
+File: Images/Screenshot__9_.png Graphic file (type png)
+
+<use Images/Screenshot__9_.png>
+Package pdftex.def Info: Images/Screenshot__9_.png used on input line 656.
+(pdftex.def)             Requested size: 469.75502pt x 264.10715pt.
+ [29 <./Images/Screenshot__8_.png>]
+<Images/Screenshot__10_.png, id=539, 1371.1225pt x 770.88pt>
+File: Images/Screenshot__10_.png Graphic file (type png)
+
+<use Images/Screenshot__10_.png>
+Package pdftex.def Info: Images/Screenshot__10_.png used on input line 663.
+(pdftex.def)             Requested size: 469.75502pt x 264.10715pt.
+
+<Images/Screenshot__11_.png, id=540, 1371.1225pt x 770.88pt>
+File: Images/Screenshot__11_.png Graphic file (type png)
+
+<use Images/Screenshot__11_.png>
+Package pdftex.def Info: Images/Screenshot__11_.png used on input line 670.
+(pdftex.def)             Requested size: 469.75502pt x 264.10715pt.
+ [30 <./Images/Screenshot__9_.png> <./Images/Screenshot__10_.png>]
+<Images/Screenshot__12_.png, id=549, 1371.1225pt x 770.88pt>
+File: Images/Screenshot__12_.png Graphic file (type png)
+
+<use Images/Screenshot__12_.png>
+Package pdftex.def Info: Images/Screenshot__12_.png used on input line 677.
+(pdftex.def)             Requested size: 469.75502pt x 264.10715pt.
+
+<Images/Screenshot__13_.png, id=550, 1371.1225pt x 770.88pt>
+File: Images/Screenshot__13_.png Graphic file (type png)
+
+<use Images/Screenshot__13_.png>
+Package pdftex.def Info: Images/Screenshot__13_.png used on input line 684.
+(pdftex.def)             Requested size: 469.75502pt x 264.10715pt.
+ [31 <./Images/Screenshot__11_.png> <./Images/Screenshot__12_.png>]
+<Images/Screenshot__14_.png, id=560, 1371.1225pt x 770.88pt>
+File: Images/Screenshot__14_.png Graphic file (type png)
+
+<use Images/Screenshot__14_.png>
+Package pdftex.def Info: Images/Screenshot__14_.png used on input line 691.
+(pdftex.def)             Requested size: 469.75502pt x 264.10715pt.
+
+<Images/Screenshot__15_.png, id=561, 1371.1225pt x 770.88pt>
+File: Images/Screenshot__15_.png Graphic file (type png)
+
+<use Images/Screenshot__15_.png>
+Package pdftex.def Info: Images/Screenshot__15_.png used on input line 698.
+(pdftex.def)             Requested size: 469.75502pt x 264.10715pt.
+ [32 <./Images/Screenshot__13_.png> <./Images/Screenshot__14_.png>]
+<Images/Screenshot__16_.png, id=570, 1371.1225pt x 770.88pt>
+File: Images/Screenshot__16_.png Graphic file (type png)
+
+<use Images/Screenshot__16_.png>
+Package pdftex.def Info: Images/Screenshot__16_.png used on input line 705.
+(pdftex.def)             Requested size: 469.75502pt x 264.10715pt.
+
+<Images/Screenshot__17_.png, id=571, 1371.1225pt x 770.88pt>
+File: Images/Screenshot__17_.png Graphic file (type png)
+
+<use Images/Screenshot__17_.png>
+Package pdftex.def Info: Images/Screenshot__17_.png used on input line 712.
+(pdftex.def)             Requested size: 469.75502pt x 264.10715pt.
+ [33 <./Images/Screenshot__15_.png> <./Images/Screenshot__16_.png>]
+<Images/Screenshot__18_.png, id=580, 1371.1225pt x 770.88pt>
+File: Images/Screenshot__18_.png Graphic file (type png)
+
+<use Images/Screenshot__18_.png>
+Package pdftex.def Info: Images/Screenshot__18_.png used on input line 719.
+(pdftex.def)             Requested size: 469.75502pt x 264.10715pt.
+
+<Images/Screenshot__19_.png, id=581, 1371.1225pt x 770.88pt>
+File: Images/Screenshot__19_.png Graphic file (type png)
+
+<use Images/Screenshot__19_.png>
+Package pdftex.def Info: Images/Screenshot__19_.png used on input line 726.
+(pdftex.def)             Requested size: 469.75502pt x 264.10715pt.
+ [34 <./Images/Screenshot__17_.png> <./Images/Screenshot__18_.png>]
+<Images/Screenshot__20_.png, id=590, 1371.1225pt x 770.88pt>
+File: Images/Screenshot__20_.png Graphic file (type png)
+
+<use Images/Screenshot__20_.png>
+Package pdftex.def Info: Images/Screenshot__20_.png used on input line 733.
+(pdftex.def)             Requested size: 469.75502pt x 264.10715pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 738.
+ [35 <./Images/Screenshot__19_.png> <./Images/Screenshot__20_.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 738.
+ (ProjectReport.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 738.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 738.
 Package rerunfilecheck Info: File `ProjectReport.out' has not changed.
-(rerunfilecheck)             Checksum: F4CC0BE504456E5CACBEE1EC35EED853;5196.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 646.
+(rerunfilecheck)             Checksum: 3108BCA99EF27AC30603DD0EE2C8C445;5259.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 738.
  ) 
 Here is how much of TeX's memory you used:
- 7873 strings out of 493634
- 112069 string characters out of 3141317
+ 7960 strings out of 493634
+ 114093 string characters out of 3141317
  213653 words of memory out of 3000000
- 11010 multiletter control sequences out of 15000+200000
+ 11063 multiletter control sequences out of 15000+200000
  12879 words of font info for 50 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  29i,13n,32p,841b,385s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -989,9 +1078,9 @@ Here is how much of TeX's memory you used:
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on ProjectReport.pdf (28 pages, 548832 bytes).
+Output written on ProjectReport.pdf (35 pages, 1139684 bytes).
 PDF statistics:
- 569 PDF objects out of 1000 (max. 8388607)
- 128 named destinations out of 1000 (max. 500000)
- 614 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 646 PDF objects out of 1000 (max. 8388607)
+ 149 named destinations out of 1000 (max. 500000)
+ 687 words of extra memory for PDF output out of 10000 (max. 10000000)
 
