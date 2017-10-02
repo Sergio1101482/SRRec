@@ -32,8 +32,15 @@
 %Binary operators: http://www.access2science.com/latex/Binary.html
 %General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
 %Or just google stuff
-\title{Software Engineering\\Project Report}
-\author{\textbf{Authors}\\Group 5\\Levi Goldfein 1257360\\Sabeehah Ismail 797621\\ Sergio Oliveira 1101482 \\Storm Menges 1102107}
+\title{\textbf{Software Engineering\\Project Report}}
+\author{\textbf{Authors}\\
+Group 5\\
+\textbf{Front End Pair:}\\
+Storm Menges (1102107)\\
+Sabeehah Ismail (797621)\\
+\textbf{Back End Pair:}\\
+Sergio Oliveira (1101482)\\
+Levi Goldfein (1257360)}
 \maketitle
 
 \begin{center}
@@ -305,8 +312,7 @@ The requirements for this feature would extend to added databases to store user-
  This feature would require constant access to the users GPS and perhaps some added input from the user.
  
  \subsection{Security Requirements}
- This product has several security and privacy issues that must be addressed. Concerning user authentication the product will require a valid email address to create an account, then they will require a unique user-name and password pair to ensure no cross contamination of private user information and to prevent access to the users sensitive and personal stored information, such as home or work address, email address, password and frequent or favourite routes. The developers will also have to provide guarantees to participating shops that provide classified and valuable databases of their stock prices that no malicious user or third party will be able to obtain this data beyond the intended scope of the product. 
-
+ This product has several security and privacy issues that must be addressed. Concerning user authentication the product will require a valid email address to create an account, then they will require a unique user-name and password pair to ensure no cross contamination of private user information and to prevent access to the users sensitive and personal stored information, such as home or work address, email address, password and frequent or favourite routes. The developers will also have to provide guarantees to participating shops that provide classified and valuable databases of their stock prices that no malicious user or third party will be able to obtain this data beyond the intended scope of the product. \\
 \section{Use Case Set and Descriptions}
 \begin{tabu} to \textwidth{| X[c] | X[c] | X[c] |} \hline
 \textbf{Use Case}&\textbf{Description}&\textbf{Actors}\\ 
@@ -319,9 +325,11 @@ Update Shop & This use case updates
 details/attribute values of a Shop from the Shop datastore, in the system's database. & Developer , Shop outlet (external)\\
 \hline
 Delete Shop & This use case deletes a Shop from the Shop datastore, in the system's database.& Developer\\
-\hline\hline
+\hline
 \multicolumn{3}{| c |}{Continued on next page}\\ \hline
 \end{tabu}
+
+
 \begin{tabu} to \textwidth{| X[c] | X[c] | X[c] |} \hline
 Create Product & This use case creates a new Product in the Product datastore, in the system's database. & Shop outlet (external)\\
 \hline
@@ -527,7 +535,7 @@ underline{What did we do well?}
   \includegraphics[width=15cm,height=10cm]{SprintBoard.jpg}
   \centering
   \caption{An example of our Sprint Board.}
-%%%%  \label{fig:boat1}
+  \label{fig:Sprint Board}
 \end{figure}
 
 \section{How to compile code and start modules}
@@ -569,7 +577,7 @@ Edit product name & PASS\\ \hline
 
 \subsection{Front-end Testing}
 \begin{center}
-\begin{tabular}{|l | c|}
+\begin{tabular}{| l | c |}
 \hline  
 \textbf{Front-end Tests}&\\\hline
 \textbf{TEST} & \textbf{PASS/FAIL} \\ \hline
