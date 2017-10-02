@@ -57,11 +57,15 @@
 \contentsline {subsection}{\numberline {7.3}Class-Responsibility-Collaborators (CRC) Cards}{19}{subsection.7.3}
 \contentsline {subsection}{\numberline {7.4}Sequence Diagram}{20}{subsection.7.4}
 \contentsline {subsection}{\numberline {7.5}Use Case Diagram}{21}{subsection.7.5}
-\contentsline {section}{\numberline {8}Sprint Retrospective}{23}{section.8}
+\contentsline {section}{\numberline {8}Sprint Planning}{23}{section.8}
 \contentsline {subsection}{\numberline {8.1}Sprint 1: 24 Aug-31 Aug}{23}{subsection.8.1}
 \contentsline {subsection}{\numberline {8.2}Sprint 2: 31 Aug-7 Sep}{23}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Sprint 3: 7 Sep-21 Sep}{24}{subsection.8.3}
-\contentsline {section}{\numberline {9}How to compile code and start modules}{25}{section.9}
-\contentsline {section}{\numberline {10}Testing}{26}{section.10}
-\contentsline {subsection}{\numberline {10.1}Back-End Testing}{26}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Front-end Testing}{27}{subsection.10.2}
+\contentsline {subsection}{\numberline {8.3}Sprint 3: 7 Sep-21 Sep}{23}{subsection.8.3}
+\contentsline {section}{\numberline {9}Sprint Retrospective}{24}{section.9}
+\contentsline {subsection}{\numberline {9.1}Sprint 1: 24 Aug-31 Aug}{24}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Sprint 2: 31 Aug-7 Sep}{24}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Sprint 3: 7 Sep-21 Sep}{25}{subsection.9.3}
+\contentsline {section}{\numberline {10}How to compile code and start modules}{26}{section.10}
+\contentsline {section}{\numberline {11}Testing}{27}{section.11}
+\contentsline {subsection}{\numberline {11.1}Back-End Testing}{27}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Front-end Testing}{28}{subsection.11.2}
